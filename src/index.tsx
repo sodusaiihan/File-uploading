@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App'
+import GlobalStyle from './style/GlobalStyle'
 import 'antd/dist/antd.css';
 
 ReactDOM.render(
-  <div>Hello, World</div>,
-  document.getElementById('root'),
+  <React.StrictMode>
+    <GlobalStyle/>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+

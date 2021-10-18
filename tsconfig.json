@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "ES2017",
     "skipLibCheck": true,
     "strict": true,
     "esModuleInterop": true,
@@ -18,7 +18,8 @@
     "baseUrl": ".",
     "paths": {
       "src/*": ["src/*"]
-    }
+    },
+    "typeRoots" : ["node_modules/@types", "src/types"]
   },
   "include": ["./src", "webpack.config.ts"],
   "exclude": ["node_modules", "dist"]
